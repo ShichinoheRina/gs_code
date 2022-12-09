@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
         <h1>記録</h1>
-        <table>
+        <table border="1">
             <tr>
                 <th>名前</th>
                 <th>Q1.湯舟につかった回数</th>
                 <th>Q2.一日の平均睡眠時間</th>
                 <th>Q3.一日の平均歩数</th>
-                <th>Q4.充実した日</th>
+                <th>Q4.充実した日数</th>
                 <th>Q5.食事の量と栄養バランス</th>
             </tr>
     
