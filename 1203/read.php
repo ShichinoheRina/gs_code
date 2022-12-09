@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
-        <h1>記録</h1>
+        <h1>ここ1週間の生活習慣</h1>
         <table border="1">
             <tr>
                 <th>名前</th>
@@ -18,8 +18,9 @@
                 <th>Q3.一日の平均歩数</th>
                 <th>Q4.充実した日数</th>
                 <th>Q5.食事の量と栄養バランス</th>
+                <th>健康度(25点中)</th>
             </tr>
-    
+          
         <?php
         // ファイルを開く
         $openFile = fopen('./data/data.text', 'r');
@@ -52,6 +53,10 @@
 
         ?>
         </table>
+
+        <div class="back">
+            <a href="post.php" class="back">最初に戻る</a>
+        </div>
     </body>
 </html>
 

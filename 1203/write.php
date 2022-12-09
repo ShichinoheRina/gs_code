@@ -30,10 +30,18 @@ $day = $_POST["day"];
 $meal = $_POST["meal"];
 
 
+//valueで取得した "0回.1" を.で分割
+$bath_p = explode(".", $bath);
+$sleep_p = explode(".", $sleep);
+$walk_p = explode(".", $walk);
+$day_p = explode(".", $day);
+$meal_p = explode(".", $meal);
+$point = $bath_p[1]+$sleep_p[1]+$walk_p[1]+$day_p[1]+$meal_p[1];
+
 
 // ファイルに書き込み
 $file = fopen('data/data.text', 'a');
-fwrite($file, $name . '/' . $bath . '/' . $sleep . '/' . $walk . '/' . $day . '/' . $meal . "\n");
+fwrite($file, $name . '/' . $bath_p[0] . '/' . $sleep_p[0] . '/' . $walk_p[0] . '/' . $day_p[0] . '/' . $meal_p[0] . '/' . $point . "\n");
 fclose($file);
 //文字作成
 
